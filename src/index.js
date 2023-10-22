@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { createRoot } from "react-dom/client";
 
 import "./index.css";
 import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import { HashRouter as Router } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = document.getElementById("root");
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
@@ -24,12 +24,13 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <App />
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
+  root
 );
 
 serviceWorkerRegistration.register();
