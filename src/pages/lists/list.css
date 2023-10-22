@@ -1,0 +1,64 @@
+.list-page {
+    height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar {
+  height: 5vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+border: 5px solid #219ebc;
+border-top: none;
+  border-radius: 0px 0px 25px 25px;
+  gap: 5vw;
+}
+.nav-bar h1 {
+  font-size: 2vh;
+}
+
+.home-icon {
+  font-size: 3vh;
+  color: #fb8500;
+ background-color:  #023047;
+ border-radius: 25px;
+ padding: 5px;
+}
+
+.progress-container {
+  width: 30vw;
+  background-color: #ccc;
+  height: 1vh;
+  border-radius: 15px;
+}
+
+.progress-bar {
+  height: 100%;
+
+  background-color: #6a994e;
+  transition: width 0.3s;
+  border-radius: 15px;
+}
+
+
+.slide {
+    height: 30vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.slide p {
+    color: #023047;
+    font-weight: 700;}
+
+.congrats {
+    color: #fb8500;
+}
